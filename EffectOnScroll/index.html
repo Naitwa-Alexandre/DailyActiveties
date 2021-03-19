@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EffectScroll</title>
+</head>
+<body>
+    <section class="bg">
+        <h2>Scroll To See Magic</h2>
+        <span class="SkewedOne"></span>
+        <span class="SkewedTwo"></span>
+    </section>
+    <section>
+        <h2>Also a lorem ipsum Header...</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit soluta animi nobis consequatur similique! Illo corporis vitae officiis recusandae, deleniti, nam iure exercitationem cupiditate quibusdam unde nisi quos odio veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores enim iure non. Sapiente debitis accusamus, minima numquam, libero tempore ipsum quisquam vero aliquid iste non rem hic, quae optio. Earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quisquam voluptates voluptas suscipit delectus, pariatur sint nulla voluptate minus obcaecati natus modi praesentium maxime libero, veritatis corrupti reiciendis vel ut! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores itaque iste quod unde ullam numquam. Repellendus repudiandae accusantium, sed doloremque a soluta architecto sunt impedit. Consectetur repudiandae laboriosam molestiae sit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus quae illum dicta fugiat maxime, quidem placeat delectus soluta molestiae iste eveniet voluptatem repellat? Enim, quam. Non architecto iure ad laudantium!<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum autem aspernatur magni, doloribus distinctio, voluptatum consequuntur voluptate sint incidunt hic tempora sunt. Et veritatis mollitia culpa ipsum tempore omnis quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae quod numquam, quibusdam animi fugiat nihil quisquam voluptates vero officiis nemo! Minus eius illum porro aperiam ipsam, voluptas officia necessitatibus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe, rem perspiciatis deleniti consectetur facilis aperiam illum quidem corporis odio. Voluptas fugit eum labore aliquid laboriosam, ea mollitia magni incidunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae nam temporibus iusto voluptatem similique ea voluptas officiis eaque perferendis vero. Assumenda animi magnam commodi cumque eveniet ut possimus inventore minima!</p>
+    </section>
+
+    <script>
+        const SkewedOne = document.querySelector('.SkewedOne');
+        const SkewedTwo = document.querySelector('.SkewedTwo');
+        window.addEventListener('scroll', function() {
+            const value1 = -15 + window.scrollY/45;
+            const value2 = 15 + window.scrollY/-45;
+            SkewedOne.style.transform = "skewY(" + value1 + "deg)";
+            SkewedTwo.style.transform = "skewY(" + value2 + "deg)";
+        })
+    </script>
+</body>
+</html>
