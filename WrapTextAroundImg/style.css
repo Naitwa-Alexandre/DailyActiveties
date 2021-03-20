@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    background: #111;
+}
+section h2
+{
+    color: #fff;
+    font-size: 2.5em;
+}
+section p
+{
+    color: #fff;
+    font-size: 1.2em;
+    text-align: justify;
+}
+.landscape1
+{
+    height: 500px;
+    float: left;
+    shape-outside: url("images/pexels-hernan-pauccara-1210273.jpg");
+    margin-right: 20px;
+    shape-margin: 20px;
+}
+.landscap2
+{
+    width: 500px;
+    float: right;
+    shape-outside: url("images/pexels-james-wheeler-1486974.jpg");
+    shape-margin: 20px;
+    margin-left: 20px;
+}
